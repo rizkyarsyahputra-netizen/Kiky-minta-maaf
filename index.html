@@ -57,11 +57,13 @@ canvas{
  align-items:center;
  padding:20px;
  z-index:5;
+ pointer-events:none;
 }
 
 .page.active{
  display:flex;
  animation:fade .7s ease;
+ pointer-events:auto;
 }
 
 .glass{
@@ -156,9 +158,12 @@ input{
  left:20px;
  bottom:20px;
  width:90px;
- z-index:20;
+ z-index:99999;
  cursor:pointer;
  animation:float 4s infinite ease-in-out;
+ pointer-events:auto;
+ user-select:none;
+ -webkit-user-drag:none;
 }
 
 .bubble{
